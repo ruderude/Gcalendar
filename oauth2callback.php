@@ -42,7 +42,7 @@ $res = file_get_contents(INFO_URL . '?' . http_build_query($params));
 $result = json_decode($res, true);
 
 //表示
-// echo $res;
+echo $res;
 ?>
 <!DOCTYPE html>
 <html>
