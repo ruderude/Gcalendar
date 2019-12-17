@@ -1,0 +1,19 @@
+<?php
+// アプリケーション設定
+define('CONSUMER_KEY', '611700052739-uul8lgnpm9phs74t1f2rjqqd6omdgu84.apps.googleusercontent.com');
+define('CALLBACK_URL', 'https://rude7.com/oauth2callback.php');
+
+// URL
+define('AUTH_URL', 'https://accounts.google.com/o/oauth2/auth');
+
+
+$params = array(
+	'client_id' => CONSUMER_KEY,
+	'redirect_uri' => CALLBACK_URL,
+	'scope' => 'https://www.googleapis.com/auth/userinfo.profile email https://www.googleapis.com/auth/calendar.settings.readonly',
+	'response_type' => 'code',
+);
+
+// 認証ページにリダイレクト
+header("Location: " . AUTH_URL . '?' . http_build_query($params));
+?>

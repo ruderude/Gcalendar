@@ -1,6 +1,3 @@
-<?php
-$data = "見出し" . "ZZZ";
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,9 +10,8 @@ $data = "見出し" . "ZZZ";
 <body>
 <h1 class="">Gcalendar</h1>
 
-<a class="button" href="/">Google認証</a>
+<a class="button" href="login.php">Google認証</a>
 
-<h1 id="">3<?php echo $data; ?></h1>
 </form>
 </body>
 </html>
